@@ -11,4 +11,8 @@ public class SampleProjectApplication extends SpringBootServletInitializer {
 		SpringApplication.run(SampleProjectApplication.class, args);
 	}
 
+	@Override
+	protected SpringApplicationBuilder configure(SpringApplicationBuilder applicationBuilder) {
+		return applicationBuilder.sources(SampleProjectApplication.class);
+	}
 }
